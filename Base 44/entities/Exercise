@@ -1,0 +1,55 @@
+{
+  "name": "Exercise",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Exercise Name"
+    },
+    "muscle_group": {
+      "type": "string",
+      "title": "Muscle Group",
+      "enum": [
+        "chest",
+        "back",
+        "shoulders",
+        "biceps",
+        "triceps",
+        "quads",
+        "hamstrings",
+        "glutes",
+        "calves",
+        "abs",
+        "forearms"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "title": "Category",
+      "enum": [
+        "compound",
+        "isolation",
+        "bodyweight",
+        "cardio"
+      ]
+    },
+    "equipment": {
+      "type": "string",
+      "title": "Equipment",
+      "enum": [
+        "barbell",
+        "dumbbell",
+        "cable",
+        "machine",
+        "bodyweight",
+        "kettlebell",
+        "band"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "muscle_group",
+    "category"
+  ]
+}

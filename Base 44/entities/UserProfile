@@ -1,0 +1,59 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "age": {
+      "type": "number",
+      "title": "Age"
+    },
+    "weight": {
+      "type": "number",
+      "title": "Weight (kg)"
+    },
+    "height": {
+      "type": "number",
+      "title": "Height (cm)"
+    },
+    "fitness_goal": {
+      "type": "string",
+      "title": "Fitness Goal",
+      "enum": [
+        "strength",
+        "hypertrophy",
+        "fat_loss",
+        "general_fitness"
+      ]
+    },
+    "experience_level": {
+      "type": "string",
+      "title": "Experience Level",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ]
+    },
+    "preferred_split": {
+      "type": "string",
+      "title": "Preferred Split",
+      "enum": [
+        "push_pull_legs",
+        "upper_lower",
+        "full_body",
+        "custom"
+      ]
+    },
+    "onboarded": {
+      "type": "boolean",
+      "title": "Onboarded",
+      "default": false
+    }
+  },
+  "required": [
+    "age",
+    "weight",
+    "height",
+    "fitness_goal",
+    "experience_level"
+  ]
+}

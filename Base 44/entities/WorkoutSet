@@ -1,0 +1,46 @@
+{
+  "name": "WorkoutSet",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "title": "Session ID"
+    },
+    "exercise_id": {
+      "type": "string",
+      "title": "Exercise ID"
+    },
+    "exercise_name": {
+      "type": "string",
+      "title": "Exercise Name"
+    },
+    "muscle_group": {
+      "type": "string",
+      "title": "Muscle Group"
+    },
+    "set_number": {
+      "type": "number",
+      "title": "Set Number"
+    },
+    "reps": {
+      "type": "number",
+      "title": "Reps"
+    },
+    "weight": {
+      "type": "number",
+      "title": "Weight (kg)"
+    },
+    "is_pr": {
+      "type": "boolean",
+      "title": "Personal Record",
+      "default": false
+    }
+  },
+  "required": [
+    "session_id",
+    "exercise_name",
+    "set_number",
+    "reps",
+    "weight"
+  ]
+}

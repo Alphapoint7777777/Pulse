@@ -1,0 +1,53 @@
+{
+  "name": "WorkoutSession",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Workout Name"
+    },
+    "workout_type": {
+      "type": "string",
+      "title": "Workout Type",
+      "enum": [
+        "push",
+        "pull",
+        "legs",
+        "upper",
+        "lower",
+        "full_body",
+        "custom"
+      ]
+    },
+    "duration_minutes": {
+      "type": "number",
+      "title": "Duration (min)"
+    },
+    "total_volume": {
+      "type": "number",
+      "title": "Total Volume (kg)"
+    },
+    "total_sets": {
+      "type": "number",
+      "title": "Total Sets"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "completed": {
+      "type": "boolean",
+      "title": "Completed",
+      "default": false
+    },
+    "completed_at": {
+      "type": "string",
+      "title": "Completed At",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "name",
+    "workout_type"
+  ]
+}
